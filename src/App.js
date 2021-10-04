@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch } from "react-router";
+import Home from "./Component/Home/Home";
+// import Error from "./Pages/Error";
+import { CreateConText } from "./ContextApi/createConText";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CreateConText>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          {/* <Route path="/about" component={About}></Route>
+        <Route path="/contact" component={Contact}></Route>
+        <Route path="/service" component={Service}></Route> */}
+          {/* <Route component={Error}></Route> */}
+        </Switch>
+      </div>
+    </CreateConText>
   );
-}
+};
 
 export default App;

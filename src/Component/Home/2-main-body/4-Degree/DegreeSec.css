@@ -1,0 +1,202 @@
+.degree_section {
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+  background-color: var(--gray-bg);
+}
+.educavo-student {
+  margin: 60px 0;
+}
+.educavo-student-head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.edcavo-student-info {
+  padding: 60px 0;
+  width: 400px;
+  margin-bottom: 30px;
+}
+.edcavo-student-info h2 {
+  font-size: 17px;
+  color: #21a7d0;
+  margin-bottom: 1.5rem;
+}
+.edcavo-student-info h1 {
+  font-size: 35px;
+  color: #112958;
+  font-family: "Nunito", sans-serif;
+}
+.edcavo-student-img-info {
+  position: relative;
+  width: 400px;
+  margin-bottom: 30px;
+  height: 398px;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.student-img-info .student-img-info {
+  position: relative;
+}
+.student-img1 {
+  width: 100%;
+  position: relative;
+}
+.student-img1 img {
+  width: 100%;
+  z-index: -10;
+}
+.student-img1::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(transparent, #273c66eb);
+}
+.student-img1 > h1 {
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.student-img-info > .student-info {
+  color: #fff;
+  background: rgba(17, 41, 88, 0.9);
+  width: 85%;
+  height: 85%;
+  padding: 6.5rem 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transform: translate(-50%, -50%) rotateY(-90deg);
+  -webkit-transform: translate(-50%, -50%) rotateY(-90deg);
+  -moz-transform: translate(-50%, -50%) rotateY(-90deg);
+  -ms-transform: translate(-50%, -50%) rotateY(-90deg);
+  -o-transform: translate(-50%, -50%) rotateY(-90deg);
+}
+.edcavo-student-img-info:hover .student-info {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+  -moz-transform: translate(-50%, -50%) rotateY(0deg);
+  -ms-transform: translate(-50%, -50%) rotateY(0deg);
+  -o-transform: translate(-50%, -50%) rotateY(0deg);
+}
+.edcavo-student-img-info:hover .student-img1 > h1 {
+  bottom: -30px;
+}
+.student-info h1 {
+  margin-top: 35px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.student-info p {
+  margin: 17px 0;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+.student-info span {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: auto;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+@media only screen and (max-width: 1400px) {
+  .edcavo-student-info {
+    width: 350px;
+  }
+  .edcavo-student-img-info {
+    width: 350px;
+    height: 349px;
+  }
+  .student-img-info > .student-info {
+    padding: 4.5rem 3rem;
+  }
+  .edcavo-student-info h1 {
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .edcavo-student-info {
+    width: 290px;
+  }
+  .edcavo-student-img-info {
+    width: 290px;
+    height: 288px;
+  }
+  .student-img-info > .student-info {
+    padding: 0rem 1.5rem;
+  }
+  .edcavo-student-info h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .edcavo-student-info {
+    width: 330px;
+  }
+  .edcavo-student-img-info {
+    width: 330px;
+    height: 328px;
+  }
+  .student-img-info > .student-info {
+    padding: 1.5rem 1.5rem;
+  }
+  .edcavo-student-info h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .edcavo-student-info {
+    width: 100%;
+    padding: 0;
+  }
+  .edcavo-student-img-info {
+    width: 100%;
+    height: 100%;
+  }
+  .student-img-info > .student-info {
+    padding: 6.5rem 3rem;
+  }
+  .edcavo-student-info h1 {
+    font-size: 28px;
+  }
+  .student-info h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .student-img-info > .student-info {
+    padding: 0rem 1.5rem;
+  }
+  .student-info h1 {
+    font-size: 24px;
+  }
+}

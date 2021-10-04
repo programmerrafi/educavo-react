@@ -1,0 +1,176 @@
+.testmonial_section {
+  padding: 10rem 0;
+}
+.testmonial_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.testmonial_donor {
+  width: 44rem;
+}
+.testmonial_donor img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.testmonial_donor h1 {
+  font-size: 2.45rem;
+  color: var(--text-color2);
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.testmonial_donor p {
+  font-size: 1.55rem;
+  color: var(--text-gray);
+  line-height: 2.7rem;
+  margin-bottom: 2rem;
+}
+.testmonial_donor > .btn > button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02rem;
+  padding: 13px 29px;
+}
+.single_donar {
+  display: flex;
+  background-color: #f3f8f9;
+  padding: 3rem 2.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  width: 74rem;
+  margin-bottom: 5.5rem;
+}
+.single_donar:last-child {
+  margin-bottom: 0;
+}
+.single_donar img {
+  width: 209px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  margin-right: 5.5rem;
+}
+.donetaion_info p {
+  font-size: 2.2rem;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-color2);
+  margin-bottom: 2.2rem;
+  font-weight: 700;
+  position: relative;
+  padding-right: 3rem;
+}
+.donetaion_info p::before {
+  position: absolute;
+  left: -27px;
+  top: -46px;
+  content: ",,";
+  font-family: Flaticon;
+  font-size: 53px;
+  letter-spacing: -2.3px;
+  color: #112958;
+  transform: rotateY(180deg);
+}
+.donetaion_info p::after {
+  position: absolute;
+  right: 205px;
+  top: 36px;
+  content: ",,";
+  font-family: Flaticon;
+  font-size: 53px;
+  letter-spacing: -2.3px;
+  color: #112958;
+}
+.donetaion_info h3 {
+  font-size: 1.8rem;
+  color: var(--text-color2);
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 0.8rem;
+}
+.donetaion_info h4 {
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1400px) {
+  .testmonial_donor {
+    width: 38rem;
+  }
+  .single_donar {
+    width: 67rem;
+  }
+  .donetaion_info p::after {
+    position: absolute;
+    right: 21px;
+    top: 36px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .testmonial_donor {
+    width: 30rem;
+  }
+  .single_donar {
+    width: 56rem;
+  }
+  .donetaion_info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .single_donar img {
+    margin-right: 5rem;
+  }
+  .donetaion_info p::after {
+    position: absolute;
+    right: 144px;
+    top: 36px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .testmonial_donor {
+    width: 44rem;
+    margin-bottom: 4rem;
+  }
+  .single_donar {
+    width: 100%;
+  }
+  .donetaion_info p {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .single_donar img {
+    margin-right: 5rem;
+  }
+  .donetaion_info p::after {
+    position: absolute;
+    right: 54px;
+    top: 36px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .donetaion_info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .single_donar img {
+    width: 190px;
+    object-fit: cover;
+  }
+  .donetaion_info p::after {
+    position: absolute;
+    right: 154px;
+    top: 58px;
+  }
+}

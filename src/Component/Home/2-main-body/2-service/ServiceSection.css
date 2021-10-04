@@ -1,0 +1,118 @@
+.service_section {
+  width: 100%;
+}
+.service_head {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service_item {
+  position: relative;
+  max-width: 47.57rem;
+}
+.service_item img {
+  width: 100%;
+  margin-top: 0.2%;
+  height: 99.8%;
+  object-fit: cover;
+}
+.service_item .service_info {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.service_info .MuiSvgIcon-root {
+  font-size: 5.5rem;
+  margin-bottom: 1.5rem;
+}
+.service_info h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.service_item .service_info::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+.service_item:nth-child(1) .service_info::after {
+  background-color: #273c66;
+}
+.service_item:nth-child(2) .service_info::after {
+  background-color: #21a7d0;
+}
+.service_item:nth-child(3) .service_info::after {
+  background-color: #772bea;
+}
+.service_item:nth-child(4) .service_info::after {
+  background-color: #16aaca;
+}
+@media only screen and (min-width: 1199px) {
+  .service_item {
+    flex: 0.33;
+    max-width: 25%;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .service_item {
+    flex: 0.33;
+    max-width: 25%;
+    overflow: hidden;
+  }
+  .service_info .MuiSvgIcon-root {
+    font-size: 5rem;
+  }
+  .service_info h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service_item {
+    flex: 50%;
+    flex-wrap: wrap;
+    max-width: 50%;
+    overflow: hidden;
+    margin-bottom: -0.5px;
+    height: 29%;
+  }
+  .service_info .MuiSvgIcon-root {
+    font-size: 5.5rem;
+  }
+  .service_info h2 {
+    font-size: 2.2rem;
+  }
+  .service_item img {
+    width: 100%;
+    margin-top: 0%;
+    height: 100%;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service_item {
+    flex: 100%;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: -0.5px;
+    height: 30rem;
+  }
+}

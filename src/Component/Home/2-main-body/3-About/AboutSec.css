@@ -1,0 +1,178 @@
+.about_section {
+  padding: 10rem 0;
+  font-family: "Nunito", sans-serif;
+}
+.student-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-std-university {
+  max-width: 440px;
+  margin-right: 45px;
+  background: url(https://keenitsolutions.com/products/html/educavo/assets/images/bg/about-intro-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 88px 50px 95px;
+  box-shadow: 0 0 20px 0px rgb(17 41 88 / 20%);
+  color: #fff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.about-std-university h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #21a7d0;
+  font-weight: 800;
+}
+.about-std-university h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 37px;
+  margin: 10px 0px;
+  font-weight: 700;
+}
+.about-std-university p {
+  font-size: 1.8rem;
+  margin: 20px 0px;
+  font-weight: 600;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.great-point {
+  display: flex;
+  margin-bottom: 40px;
+}
+.great-point .point {
+  width: 225px;
+  background: #fbf8cc;
+
+  margin-right: 31px;
+  text-align: center;
+  padding: 31px 0px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.great-point .point:last-child {
+  margin-right: 0px;
+  background: #dcf1fd;
+}
+.great-point .point:nth-child(2) {
+  background: #e9fbd5;
+}
+.great-point .point h1 {
+  font-size: 42px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #112958;
+}
+.great-point .point h4 {
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #394459;
+}
+.great-point-main > .student-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.student-img > .photo {
+  width: 353px;
+  margin-right: 30px;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.student-img > .photo:nth-child(2) {
+  margin-right: 0px;
+}
+.student-img > .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1400px) {
+  .about-std-university {
+    max-width: 400px;
+    margin-right: 40px;
+  }
+  .great-point .point {
+    width: 202px;
+  }
+  .student-img > .photo {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .about-std-university {
+    max-width: 320px;
+    padding: 60px 25px 70px;
+  }
+  .about-std-university h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .about-std-university > button {
+    margin-bottom: 5px;
+  }
+  .great-point .point {
+    max-width: 168px;
+  }
+  .great-point .point h1 {
+    font-size: 38px;
+  }
+  .great-point .point h4 {
+    font-size: 19px;
+  }
+  .student-img > .photo {
+    max-width: 269px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .about-std-university {
+    max-width: 100%;
+    padding: 45px 35px 50px;
+    margin-bottom: 5rem;
+    margin-right: 0;
+  }
+  .great-point .point {
+    max-width: 100%;
+  }
+  .student-img > .photo {
+    max-width: 100%;
+  }
+  .great-point,
+  .student-img {
+    justify-content: space-between;
+  }
+}
+.great-point-main {
+  margin: auto;
+}
+@media only screen and (max-width: 767px) {
+  .great-point {
+    flex-wrap: wrap;
+  }
+  .great-point .point {
+    margin-right: 0;
+    width: 100%;
+  }
+  .student-img {
+    align-items: center;
+    justify-content: center;
+  }
+  .student-img > .photo {
+    width: 70%;
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+}
