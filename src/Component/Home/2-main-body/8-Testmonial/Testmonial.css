@@ -140,7 +140,7 @@
 }
 @media only screen and (max-width: 991px) {
   .testmonial_donor {
-    width: 44rem;
+    max-width: 44rem;
     margin-bottom: 4rem;
   }
   .single_donar {
@@ -160,6 +160,10 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .testmonial_donor {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
   .donetaion_info p {
     font-size: 1.6rem;
     font-weight: 600;
@@ -172,5 +176,39 @@
     position: absolute;
     right: 154px;
     top: 58px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .testmonial_donor {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .donetaion_info p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+  .donetaion_info p::before,
+  .donetaion_info p::after {
+    display: none;
+  }
+  .single_donar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .single_donar img {
+    max-width: 190px;
+    margin-right: 0rem;
+    object-fit: cover;
+  }
+  .category_info h2 {
+    font-size: 2rem;
+  }
+  .single_category_info {
+    margin-bottom: 2rem;
+    padding: 2rem 0;
   }
 }
